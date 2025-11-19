@@ -7,7 +7,7 @@ public class Primes {
             isPrime[i] = true;
         }
 
-        for (int p = 2; p * p <= Math.sqrt(n); p++) {
+        for (int p = 2; p * p <= n; p++) {
             if (isPrime[p]) {
                 for (int confirmedMultiple = p * p; confirmedMultiple <= n; confirmedMultiple += p) {
                     isPrime[confirmedMultiple] = false;
